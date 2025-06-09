@@ -1,11 +1,21 @@
-import React from 'react';
+import React from "react";
+import NavigationHeader from './components/NavigationHeader';
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import ProjectsSection from './components/ProjectsSection';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 
 function App() {
     return (
-        <div style={{ textAlign: 'center', padding: '2rem' }}>
-            <h1>Welcome to My Landing Page</h1>
-            <p>This is a simple React app deployed with GitHub Pages.</p>
-        </div>
+        <>
+            <NavigationHeader />
+            <HeroSection />
+            <AboutSection />
+            <ProjectsSection />
+            <ContactSection />
+            <Footer />
+        </>
     );
 }
 
