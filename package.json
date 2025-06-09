@@ -2,20 +2,24 @@
   "name": "webpage",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://lramir14.github.io/webpage",
+  "homepage": "https://lramir14.github.io",
   "dependencies": {
+    "lucide-react": "^0.513.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.6.2"
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.3.0",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "browserslist": {
     "production": [
