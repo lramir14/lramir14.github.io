@@ -1,7 +1,7 @@
 import React from "react";
 import Button from './Button';
 import { Briefcase, Download } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
 export function HeroSection() {
     return (
         <section id="hero" className="text-center py-16 md:py-24">

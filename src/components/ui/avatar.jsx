@@ -1,15 +1,16 @@
-import * as React from "react"
+import React from "react";
+import clsx from "clsx";
 
 const Avatar = React.forwardRef(({ className, ...props }, ref) => (
     <div
         ref={ref}
         className={clsx(
-            "relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full",
+            "relative flex shrink-0 overflow-hidden rounded-full",
             className
         )}
         {...props}
     />
-))
+));
 
 const AvatarImage = React.forwardRef(({ className, ...props }, ref) => (
     <img
@@ -17,7 +18,7 @@ const AvatarImage = React.forwardRef(({ className, ...props }, ref) => (
         className={clsx("aspect-square h-full w-full", className)}
         {...props}
     />
-))
+));
 
 const AvatarFallback = React.forwardRef(({ className, ...props }, ref) => (
     <div
@@ -28,6 +29,6 @@ const AvatarFallback = React.forwardRef(({ className, ...props }, ref) => (
         )}
         {...props}
     />
-))
+));
 
-export { Avatar, AvatarImage, AvatarFallback }
+export { Avatar, AvatarImage, AvatarFallback };
