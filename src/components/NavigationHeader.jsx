@@ -1,6 +1,5 @@
 import React from "react";
 import { Code } from "lucide-react";
-// Remove: import { Link } from "react-router-dom";
 
 export function NavigationHeader() {
     return (
