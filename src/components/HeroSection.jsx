@@ -1,33 +1,37 @@
 import React from "react";
-import Button from './Button';
-import { Briefcase, Download } from "lucide-react";
-import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
-export function HeroSection() {
+
+export const HeroSection = () => {
     return (
-        <section id="hero" className="text-center py-16 md:py-24">
-            <Avatar className="w-32 h-32 mx-auto mb-6 ring-2 ring-primary ring-offset-4 ring-offset-background">
-                <AvatarImage src="https://placehold.co/200x200/2d3748/e2e8f0?text=LFRR" alt="LFRR1993" />
-                <AvatarFallback>LFRR</AvatarFallback>
-            </Avatar>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-                Hi, I'm lfrr1993
+        <section
+            id="hero"
+            className="flex flex-col items-center justify-center text-center min-h-screen"
+        >
+            <div className="w-32 h-32 rounded-full bg-gray-700 text-white flex items-center justify-center text-xl font-semibold border-4 border-white mb-6">
+                LFRR
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                Hi, I'm <span className="text-white">lfrr1993</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                A Data Scientist crafting intelligent solutions from complex data.
+            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-8">
+                A Data Scientist crafting intelligent solutions from complex data. <br />
                 Building robust LLM RAG systems and more.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <Button size="lg" asChild>
-                    <a href="#projects">
-                        <Briefcase className="mr-2 h-5 w-5" /> View Projects
-                    </a>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                    <a href="/resume.pdf" download>
-                        <Download className="mr-2 h-5 w-5" /> Download Resume
-                    </a>
-                </Button>
+            <div className="flex gap-4">
+                <a
+                    href="#projects"
+                    className="bg-white text-black px-6 py-3 rounded shadow font-semibold hover:bg-gray-200 transition"
+                >
+                    🧳 View Projects
+                </a>
+                <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 text-white px-6 py-3 rounded shadow font-semibold hover:bg-gray-700 transition"
+                >
+                    ⬇️ Download Resume
+                </a>
             </div>
         </section>
     );
-}
+};
