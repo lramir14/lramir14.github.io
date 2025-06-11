@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './home' // No extension needed
+import Home from './home.tsx' // No extension needed
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
