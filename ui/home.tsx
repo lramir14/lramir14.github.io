@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "../components/ui/button.tsx";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar.tsx";
 import { Code, Github, Linkedin, Mail, Briefcase, Download } from "lucide-react";
 import { Link } from "react-router-dom"; // Import for Link
-import { SkillsSection } from "components/SkillsSection"; // Import SkillsSection
+import { SkillsSection } from "../components/SkillsSection.tsx"; // Import SkillsSection
 
 export default function Home() {
     // const { user, loading } = useCurrentUser(); // Removed as no longer needed
