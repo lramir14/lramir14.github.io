@@ -16,7 +16,6 @@
     "url": "https://github.com/lramir14/lramir14.github.io/issues"
   },
   "homepage": "https://github.com/lramir14/lramir14.github.io#readme",
-  "description": "",
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -32,5 +31,6 @@
     "postcss": "^8.5.4",
     "tailwindcss": "^4.1.9",
     "vite": "^6.3.5"
-  }
+  },
+  "description": ""
 }
