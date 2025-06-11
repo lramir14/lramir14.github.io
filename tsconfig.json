@@ -1,0 +1,46 @@
+// C:\Users\luisf\Desktop\webpage\lramir14.github.io\tsconfig.json
+{
+    "compilerOptions": {
+        "target": "ES2020", // Compile to modern JS (ES2020)
+        "useDefineForClassFields": true, // For class properties (React components)
+        "lib": [
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
+        ], // Standard libraries for web apps
+        "module": "ESNext", // Use ES module syntax (import/export)
+        "skipLibCheck": true, // Skip type checking of declaration files
+        /* Bundler mode */
+        "moduleResolution": "bundler", // Recommended for Vite
+        "allowImportingTsExtensions": true, // Allow importing .ts/.tsx without explicit extension
+        "resolveJsonModule": true, // Allow importing JSON files
+        "isolatedModules": true, // Treat each file as a separate module (good for bundling)
+        "noEmit": true, // Don't emit compiled JS files (Vite handles this)
+        "jsx": "react-jsx", // How JSX is transformed
+        /* Linting */
+        "strict": true, // Enable all strict type-checking options
+        "noUnusedLocals": true, // Report errors on unused local variables
+        "noUnusedParameters": true, // Report errors on unused parameters
+        "noFallthroughCasesInSwitch": true, // Ensure switch statements are exhaustive
+        /* Path Aliases */
+        "baseUrl": ".", // Base directory for resolving non-relative module names (your project root)
+        "paths": {
+            "@/*": [
+                "./*"
+            ] // Maps @/ to the baseUrl (i.e., your project root)
+        }
+    },
+    "include": [
+        "src", // Include your 'src' folder (if you use it for other code)
+        "components", // Include your 'components' folder
+        "ui", // Include your 'ui' folder (since home.tsx is here)
+        "utils", // Include your 'utils' folder
+        "main.tsx", // Include your root main.tsx
+        "home.tsx", // Include your root home.tsx
+        "vite-env.d.ts" // Vite-specific type definitions
+    ],
+    "exclude": [
+        "node_modules", // Don't include node_modules
+        "dist" // Don't include build output
+    ]
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./components/ui/button";
+import { Button } from "../components/ui/button.tsx";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Code, Github, Linkedin, Mail, Briefcase, Download } from "lucide-react";
 import { Link } from "react-router-dom"; // Import for Link
