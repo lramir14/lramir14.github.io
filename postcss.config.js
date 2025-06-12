@@ -1,16 +1,15 @@
-// postcss.config.js
+// postcss.config.js (ES Module syntax for "type": "module" in package.json)
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// Polyfill for __dirname in ES Modules
+// Polyfill for __dirname in ES Modules context
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default {
     plugins: {
+        // Use the ES module version of the plugin import, and pass the config path
         '@tailwindcss/postcss': {
-            // Explicitly point to your tailwind.config.js file
-            // This path is relative to the postcss.config.js file
             config: path.resolve(__dirname, './ui/tailwind.config.js'),
         },
         autoprefixer: {},
