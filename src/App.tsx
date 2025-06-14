@@ -1,5 +1,5 @@
 // src/App.tsx
-import React from "react";
+// import React from "react";
 import { Button } from "./components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
 import { Code, Github, Linkedin, Mail, Briefcase, Download } from "lucide-react";

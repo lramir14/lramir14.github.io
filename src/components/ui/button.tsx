@@ -26,7 +26,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         const allClasses = cn(baseClasses, sizeClasses[size], variantClasses[variant], className);
 
         if (asChild) {
-            return React.cloneElement(children as React.ReactElement, { className: allClasses, ...props, ref });
+            return React.cloneElement(children as React.ReactElement, { className: allClasses, ...props, ref } as any);
+            // OR a more robust solution, but this often requires more complex type definitions
+            // to correctly infer the ref type for the cloned element.
+            // For quick fix and given this is a basic Shadcn adaptation, 'as any' is common.
         }
 
         return (

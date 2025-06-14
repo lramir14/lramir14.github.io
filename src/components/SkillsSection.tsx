@@ -1,5 +1,5 @@
 // src/components/SkillsSection.tsx
-import React from 'react';
+// import React from 'react';
 
 // This ensures it's a NAMED export called SkillsSection
 export const SkillsSection = () => {
