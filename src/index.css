@@ -56,6 +56,7 @@
   }
 
   body {
+    /* These two are important for setting initial background and text colors */
     @apply bg-background text-foreground;
   }
 }

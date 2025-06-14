@@ -1,15 +1,13 @@
 // src/App.tsx
 import React from "react";
-// Adjust paths: from "@/components/ui/button" to "./components/ui/button" etc.
 import { Button } from "./components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
 import { Code, Github, Linkedin, Mail, Briefcase, Download } from "lucide-react";
 // For now, comment out React Router imports until we set it up
 // import { Link } from "react-router-dom";
-import { SkillsSection } from "./components/SkillsSection"; // Adjusted path
+import { SkillsSection } from "./components/SkillsSection";
+import './index.css';
 
-// Make sure index.css is imported here (Vite usually adds it automatically to main.tsx, but good to double check)
-// import './index.css'; // This is typically in src/main.tsx or App.tsx depending on your project setup, ensure it's loaded somewhere.
 
 export default function App() {
   return (
