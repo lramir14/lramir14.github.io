@@ -19,7 +19,7 @@ export default function App() {
             <a className="mr-6 flex items-center space-x-2" href="/">
               <Code className="h-6 w-6" />
               <span className="hidden font-bold sm:inline-block">
-                DataForge Portfolio
+                Portfolio
               </span>
             </a>
             <nav className="flex items-center gap-4 text-sm lg:gap-6">
@@ -97,14 +97,18 @@ export default function App() {
           <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
           <div className="max-w-3xl mx-auto text-center text-muted-foreground">
             <p className="mb-4">
-              [Placeholder for a brief bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.]
+              [Driven and analytical Data Science and Public Policy professional with experience in implementing natural language
+              processing, deep learning and machine learning models applied to business requirements and/or social science
+              research. Experienced in the use of LLMs, statistical modelling, data engineering, data analysis and visualization,
+              political risks for S&P 500 companies in several industries, and stakeholder management and
+              digitalization strategies. Proficient in statistics and quantitative methods in R Studio and Python.]
             </p>
             <p>
-              [Another paragraph about skills, interests, or career goals. Duis aute irure dolor in reprehenderit
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]
+              [Current interests involve data engineering, developing and fine-tuning local LLMs using Ollama, Gradio, and LangChain.
+              During my free time I play football (midfield and defender.), watch movies, and read Sci-Fi and philosophy books.
+              I travel consistently to Poznan, Poland and currently learning German and Polish.
+
+              ]
             </p>
           </div>
         </section>
