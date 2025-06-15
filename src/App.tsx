@@ -68,7 +68,7 @@ export default function App() {
         {/* Hero Section */}
         <section id="hero" className="text-center py-16 md:py-24">
           <Avatar className="w-32 h-32 mx-auto mb-6 ring-2 ring-primary ring-offset-4 ring-offset-background">
-            <AvatarImage src="https://placehold.co/200x200/2d3748/e2e8f0?text=LFRR" alt="LFRR1993" />
+            <AvatarImage src="/my-avatar.jpeg" alt="Luis Ramirez" />
             <AvatarFallback>LFRR</AvatarFallback>
           </Avatar>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
@@ -97,19 +97,24 @@ export default function App() {
         <section id="about" className="py-16 md:py-24 border-t border-border/40">
           <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
           <div className="max-w-3xl mx-auto text-center text-muted-foreground">
-            <p className="mb-4">
+
+            <p className="mb-6">
               [Driven and analytical Data Science and Public Policy professional with experience in implementing natural language
               processing, deep learning and machine learning models applied to business requirements and/or social science
-              research. Experienced in the use of LLMs, statistical modelling, data engineering, data analysis and visualization,
+              research.]
+            </p>
+
+            <p className="mb-6">
+              [Experienced in the use of LLMs, statistical modelling, data engineering, data analysis and visualization,
               political risks for S&P 500 companies in several industries, and stakeholder management and
               digitalization strategies. Proficient in statistics and quantitative methods in R Studio and Python.]
             </p>
-            <p>
+
+            <p className="mb-6">
+
               [Current interests involve data engineering, developing and fine-tuning local LLMs using Ollama, Gradio, and LangChain.
               During my free time I play football (midfield and defender.), watch movies, and read Sci-Fi and philosophy books.
-              I travel consistently to Poznan, Poland and currently learning German and Polish.
-
-              ]
+              I travel consistently to Poznan, Poland and currently learning German and Polish.]
             </p>
           </div>
         </section>
@@ -161,13 +166,13 @@ export default function App() {
               Interested in collaborating or learning more about my work? Feel free to reach out.
             </p>
             <div className="flex justify-center space-x-6">
-              <a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary">
+              <a href="mailto:lfrr93@gmail.com" className="text-muted-foreground hover:text-primary">
                 <Mail className="h-8 w-8" />
               </a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+              <a href="https://github.com/lramir14" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                 <Github className="h-8 w-8" />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
+              <a href="https://linkedin.com/in/luis-fernando-ramírez-ruiz-ab7698b5" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                 <Linkedin className="h-8 w-8" />
               </a>
             </div>
