@@ -127,9 +127,24 @@ export default function App() {
             <div className="bg-card p-6 rounded-lg border border-border shadow-lg hover:shadow-xl transition-shadow">
               <h3 className="text-xl font-semibold mb-2">Local LLM RAG System</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                [Detailed description of your LLM RAG project. Highlight key features and technologies used.]
+                [QWEN3 0.6b model with a 4-bit quantization. The UI was developed using Gradio. <br />
+                The project is aimed at using a local Language Model as an Assistant that allows you to upload pdfs and will tailor the answers according to the provided documents. <br />
+                A panel below will help visualize the main sources the model considered to provide an answer. <br />
+                It includes a section that enables web search to the model using DuckDuckGo python library.] <br />
+
               </p>
-              <Button variant="link" className="p-0 h-auto">View on GitHub <Github className="ml-2 h-4 w-4" /></Button>
+              {/* INSERT IMAGE HERE */}
+              <img
+                src="/localrag.png" // Path to your image in the public folder
+                alt="Screenshot of Local LLM RAG System" // Descriptive alt text is important!
+                className="w-full object-cover rounded-md mb-4" // Tailwind classes for styling
+              />
+              <Button variant="link" className="p-0 h-auto" asChild>
+                {/* Replace "YOUR_LLM_RAG_GITHUB_URL_HERE" with the actual URL to that project's GitHub repo */}
+                <a href="https://github.com/lramir14/agent" target="_blank" rel="noopener noreferrer">
+                  View on GitHub <Github className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
             </div>
             {/* Project Card Placeholder 2 */}
             <div className="bg-card p-6 rounded-lg border border-border shadow-lg hover:shadow-xl transition-shadow">
