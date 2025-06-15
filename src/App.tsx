@@ -133,34 +133,75 @@ export default function App() {
                 It includes a section that enables web search to the model using DuckDuckGo python library.] <br />
 
               </p>
-              {/* INSERT IMAGE HERE */}
-              <img
-                src="/localrag.png" // Path to your image in the public folder
-                alt="Screenshot of Local LLM RAG System" // Descriptive alt text is important!
-                className="w-full object-cover rounded-md mb-4" // Tailwind classes for styling
-              />
               <Button variant="link" className="p-0 h-auto" asChild>
                 {/* Replace "YOUR_LLM_RAG_GITHUB_URL_HERE" with the actual URL to that project's GitHub repo */}
                 <a href="https://github.com/lramir14/agent" target="_blank" rel="noopener noreferrer">
                   View on GitHub <Github className="ml-2 h-4 w-4" />
                 </a>
               </Button>
+              {/* INSERT IMAGE HERE */}
+              <img
+                src="/localrag.png" // Path to your image in the public folder
+                alt="Screenshot of Local LLM RAG System" // Descriptive alt text is important!
+                className="w-full object-cover rounded-md mb-4" // Tailwind classes for styling
+              />
+
             </div>
             {/* Project Card Placeholder 2 */}
             <div className="bg-card p-6 rounded-lg border border-border shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-2">Data Science Project 2</h3>
+              <h3 className="text-xl font-semibold mb-2">Geospatial Analysis of Police Lethality in São Paulo</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                [Description of another data science project. Focus on impact and skills demonstrated.]
+                [Brazil’s state of São Paulo reports hundreds of police-related deaths each year, but the where and why behind those deaths remain poorly understood. Using 2022 census micro-data, detailed shapefiles, and incident-level police-mortality records (2013-2025), we:]
               </p>
-              <Button variant="link" className="p-0 h-auto">View on GitHub <Github className="ml-2 h-4 w-4" /></Button>
+              {/* START OF THE LIST */}
+              <ul className="list-disc list-inside text-muted-foreground text-sm mb-4 space-y-1">
+                <li>Geocode individual deaths and assign them to districts.</li>
+                <li>Distribute census population and household income down to census-sector slices that align with district borders.</li>
+                <li>Map raw counts, per-capita death rates, and Local Indicators of Spatial Association (LISA) clusters.</li>
+                <li>Model lethal-force risk with spatial-lag and spatial-error SAR models, testing demographic, income, and urban-form predictors.</li>
+              </ul>
+              {/* END OF THE LIST */}
+              <p className="text-muted-foreground text-sm mb-4">
+                [The full workflow is scripted in reproducible R Markdown (R/PoliceKillingsFinal.Rmd) and documented below.]
+              </p>
+              <Button variant="link" className="p-0 h-auto" asChild>
+                {/* Replace "YOUR_LLM_RAG_GITHUB_URL_HERE" with the actual URL to that project's GitHub repo */}
+                <a href="https://github.com/rfdornelles/geospatial_assignments" target="_blank" rel="noopener noreferrer">
+                  View on GitHub <Github className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+              {/* INSERT IMAGE HERE */}
+              <img
+                src="/maps.png" // Path to your image in the public folder
+                alt="4 maps to synthesize the Geospatial analysis" // Descriptive alt text is important!
+                className="w-full object-cover rounded-md mb-4" // Tailwind classes for styling
+              />
+
             </div>
+
             {/* Project Card Placeholder 3 */}
             <div className="bg-card p-6 rounded-lg border border-border shadow-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-xl font-semibold mb-2">Data Visualization Hub</h3>
+              <h3 className="text-xl font-semibold mb-2">Modelling Uncertainty with Bayesian Neural Networks</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                [Description of a project showcasing data visualization skills. Mention tools like Recharts if applicable.]
+                [Developed a tutorial, in which I was in charge of creating a Bayesian Neural Network, to model uncertainty.<br />
+                The tutorial begins by introducing the theoretical foundations of BNNs, emphasizing their ability to represent uncertainty
+                in model weights as probability distributions. <br /> This approach contrasts traditional deterministic models, providing confidence
+                intervals alongside predictions, which are essential for high-stakes decision-making in domains like energy systems, healthcare, and finance.<br />
+                The case study developed in the tutorial used energy data specified for a country and time period.]
               </p>
-              <Button variant="link" className="p-0 h-auto">Live Demo <Briefcase className="ml-2 h-4 w-4" /></Button>
+              <Button variant="link" className="p-0 h-auto" asChild>
+                {/* Replace "YOUR_LLM_RAG_GITHUB_URL_HERE" with the actual URL to that project's GitHub repo */}
+                <a href="https://github.com/hertie-data-science-lab/tutorial-group_4" target="_blank" rel="noopener noreferrer">
+                  View on GitHub <Github className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+
+              {/* INSERT IMAGE HERE */}
+              <img
+                src="/bnn.png"
+                alt="Bayesian Neural Network predictions"
+                className="w-full object-cover rounded-md mb-4"
+              />
             </div>
           </div>
         </section>

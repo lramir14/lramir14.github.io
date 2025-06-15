@@ -27,3 +27,5 @@ node_modules/
 dist/
 .build/
 src/App.tsx
+public/maps.png
+public/bnn.png
