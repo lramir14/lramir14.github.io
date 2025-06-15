@@ -19,7 +19,7 @@ export default function App() {
             <a className="mr-6 flex items-center space-x-2" href="/">
               <Code className="h-6 w-6" />
               <span className="hidden font-bold sm:inline-block">
-                Portfolio
+                Home
               </span>
             </a>
             <nav className="flex items-center gap-4 text-sm lg:gap-6">
@@ -72,7 +72,7 @@ export default function App() {
             <AvatarFallback>LFRR</AvatarFallback>
           </Avatar>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-            Hi, I'm Luis Fernando Ramirez
+            Hi, I'm Luis Fernando Ramírez
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             A Data Scientist and Public Policy professional crafting solutions from complex data.
