@@ -72,11 +72,12 @@ export default function App() {
             <AvatarFallback>LFRR</AvatarFallback>
           </Avatar>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-            Hi, I'm lfrr1993
+            Hi, I'm Luis Fernando Ramirez
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            A Data Scientist crafting intelligent solutions from complex data.
-            Building robust LLM RAG systems and more.
+            A Data Scientist and Public Policy professional crafting solutions from complex data.
+            Hold a Master of Science in Data Science and a Master's in Public Policy from the Hertie School
+
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <Button size="lg" asChild>
